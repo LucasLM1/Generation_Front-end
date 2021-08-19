@@ -19,22 +19,24 @@
 
     <div class ="formBox">
         <form>
-            <div class ="btnLogin">
+            <div class ="btnLogin"> <!--placeholder sempre vai no input pra fazer a animção-->
+                <input type="text" id= "nome" placeholder="Digite seu nome" required onkeyup = 'validaNome()'>  <!--onkeyup funçao do js ativada ao soltar a tecla nome-->
                 <label for ="nome">Nome:</label>
-                <input type="text" id= "nome" required>
+                <div id = 'txtNome'></div>
             </div>
            
-            <div class ="btnLogin">
-                <label for ="email" placeholder="">Email:</label> <!--placeholder texto que aparece d vez em quando, deixei invisivel pra fazer animação-->
-                <input type="email" id= "email" required>
+            <div class ="btnLogin"> <!--placeholder sempre vai no input pra fazer a animção-->
+                <input type="email" id= "email" placeholder="Digite seu email" required onkeyup = 'validaEmail()'>
+                <label for ="email">Email:</label> <!--placeholder texto que aparece d vez em quando, deixei invisivel pra fazer animação-->
+                <div id = 'txtEmail'></div>
             </div>
 
-            <div class ="btnLogin">
+            <div class ="btnLogin"> <!--placeholder sempre vai no input pra fazer a animção-->
+                <input type="assunto" id= "assunto" placeholder="Digite qual assunto" required>
                 <label for ="assunto">Assunto:</label>
-                <input type="assunto" id= "assunto" required>
             </div>
 
-            <div>
+            <div class = "bntEnviar">
                 <button>Enviar</button>
             </div>
         </form>
@@ -62,5 +64,8 @@
             <b>Todos os Direitos reservados: Lucas M &copy</b>
         </p>
     </footer>
+
+    <script type="text/javascript" src="../Primeiros exercicios em HTML5/js/script.js"></script>
+
 </body>
 </html>
