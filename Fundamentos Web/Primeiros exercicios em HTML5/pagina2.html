@@ -32,8 +32,9 @@
             </div>
 
             <div class ="btnLogin"> <!--placeholder sempre vai no input pra fazer a animção-->
-                <input type="assunto" id= "assunto" placeholder="Digite qual assunto" required>
+                <input type="assunto" id= "assunto" placeholder="Digite qual assunto" required onkeyup="validaAssunto()">
                 <label for ="assunto">Assunto:</label>
+                <div id = 'txtAssunto'></div>
             </div>
 
             <div class = "bntEnviar">

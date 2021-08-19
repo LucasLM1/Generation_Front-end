@@ -40,7 +40,7 @@ function validaNome() {
         txt.innerHTML = "Nome inválido" 
         txt.style.color = "white" //cor da fonte
         txt.style.fontSize = "18px" // tamanho da fonte
-        txt.style.margin = "7x"
+        txt.style.margin = "7px"
     }
     else{
         txt.innerHTML = ""
@@ -58,9 +58,30 @@ function validaEmail(){
         txtEmail.innerHTML = "Email inválido"
         txt.style.color = "white" //cor da fonte
         txt.style.fontSize = "18px" // tamanho da fonte
-        txt.style.margin = "7x"
+        txt.style.margin = "7px"
     }
     else{
          txtEmail.innerHTML = ""
     }
+}
+
+function validaAssunto(){
+
+    let txt = document.querySelector('#txtAssunto')
+    if (assunto.value.length <=1) {
+       txtAssunto.innerHTML = ""
+    }
+    else if (assunto.value.length < 3){ // Obs.: vi o metódo no video da plataforma porém fiz assim pois fica melhor visivelmente
+        txtAssunto.innerHTML = "Digite um assunto válido" 
+        txtAssunto.style.color = "white" //cor da fonte
+        txtAssunto.style.fontSize = "18px" // tamanho da fonte
+        txtAssunto.style.margin = "7px"
+    }
+    else {
+        txtAssunto.innerHTML = "Você só pode digitar até 100 caracteres, caso contrario o assunto não será enviado" 
+        txt.style.color = "white" //cor da fonte
+        txt.style.fontSize = "18px" // tamanho da fonte
+        txt.style.margin = "7x"
+    }
+
 }

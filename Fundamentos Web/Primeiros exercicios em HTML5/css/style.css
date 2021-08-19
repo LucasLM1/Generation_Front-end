@@ -9,6 +9,11 @@ body{
 }
 
 /*Estilos da Página1.html*/
+
+h1{
+    color: #fff;
+}
+
 #menu li{
     display: flex;
     text-align: center;
@@ -18,17 +23,18 @@ body{
 
 #menu li a{
     text-decoration: none; /*tirando hiperlink dos botões*/
-    color: black;
+    color: rgb(255, 255, 255);
     justify-content: center;
     font-family: sans-serif; /*tipo de fonte*/
     font-size: 15px; /*tamanho da fonte*/
 }
 
 #menu li a:hover{ /*animação quando o mouse passa por cima de determinados lugares*/
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .center1{
+    color: #fff;
     justify-content: center;
     text-align: center;
     font-family: sans-serif;
@@ -37,6 +43,7 @@ body{
 }
 
 .center2{
+    color: #fff;
     text-align: center;
     font-family: sans-serif; /*tipo de fonte*/
     font-size: 15px; /*tamanho da fonte*/
@@ -58,11 +65,12 @@ body{
     height: 200px;
     margin-bottom: 20px;
     border-radius: 12%; /*curvinha na borda*/
-    box-shadow: 7px 6px 7px #000000d5, 7px 6px 7px #0631be00; /*degrade*/
+    box-shadow: 7px 6px 7px #ffffffd5, 7px 6px 7px #0631be00; /*degrade*/
 }
 
 .soyjo:hover{
-    box-shadow: 7px 6px 7px #ffffff, 7px 6px 7px #0631be00; /*troca de cor no degrade*/
+    transition: .85s;
+    box-shadow: 7px 6px 7px #000000, 7px 6px 7px #0631be00; /*troca de cor no degrade*/
 }
 
 .dirReserv{
@@ -76,27 +84,29 @@ body{
 }
 
 .center2:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 /*Estilos da Página2.html*/
 
 
 .formBox{
-    background-color: #0500006c; /*cor de fundo*/
+    background-color: #8031313b; /*cor de fundo*/
     text-align: center;
     align-items: center;
-    height: 280px;/*altura*/
+    height: 260px;/*altura*/
     width: 285px; /*largura*/
     padding: 45px; /*espaçamento interno*/
     border-radius: 12%; /*curvinha na borda*/
     font-family: sans-serif; /*tipo de fonte*/
     font-size: 20px;  /*tamanho da fonte*/
-    box-shadow: 3px 2px 2px #000, 3px 2px 2px #0143ff00;
+    box-shadow: 5px 5px 6px #000, 5px 5px 6px #0143ff00;
 }
 
 .formBox:hover{
-    box-shadow: 3px 3px 3px #000800b0, 3px 3px 3px #0143ff00;
+    background-color: #a0282828;
+    box-shadow: 8px 8px 7px #000800b0, 8px 8px 7px #0143ff00;
+    transition: .75s;
 }
 
 
@@ -112,20 +122,21 @@ input{
     background: transparent; /*tirando background do input*/
     border: none; /*tirando bordas do input*/
     outline: none; /*tirando a linha q fica embaixo quando clica*/
-    border-bottom: 2px solid #fc5000; /*colocando uma borda inferior e adicionando cor*/
+    border-bottom: 3px solid #ffffffcb; /*colocando uma borda inferior e adicionando cor*/
     transition: .20s ease-in-out; /*tempo pra gerar a ação*/
+    margin-bottom: 5px;
 }
 
 input:focus{ /*quando o botão for clicado gera a ação*/
-    border-bottom: 2px solid #27c034;
-    box-shadow: 0 2px 0 0 #27c034;
+    border-bottom: 3px solid #27c034;
+    box-shadow: 0 3px 0 0 #27c034;
 }
 
 label{
     position: absolute; /* se n colocado certo aparece no lado superior esquerdo da pagina*/
     top: 0;
     left: 0;
-    color: #020202;
+    color: #ffffff;
     font-weight: bold;
     font-family: sans-serif;
     transform: translateY(11px); /*descendo o texto, sempre verificar pra ficar certo na linha*/
@@ -154,13 +165,12 @@ input::placeholder{
 
 button{
     padding: 12px 18px;
-    margin: 10px;
     border: none;
     border-radius: 12%;
     text-align: center;
     background-color: #fefeff1c;
     align-items: center;
-    box-shadow: 3px 2px 2px #fc5000, 3px 2px 2px #0143ff00;
+    box-shadow: 3px 2px 2px #000000, 3px 2px 2px #0143ff00;
 }
 
 button:focus{
@@ -169,7 +179,7 @@ button:focus{
 }
 
 button:hover{ /*animação do botao*/
-    box-shadow: 3px 2px 2px #000, 3px 2px 2px #0143ff00;
+    box-shadow: 5px 5px 5px #000800b0, 5px 5px 5px #0143ff00;
     background-color: #27c034;
     transition: .75s;
     
