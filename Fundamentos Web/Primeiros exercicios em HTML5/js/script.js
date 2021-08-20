@@ -25,6 +25,9 @@
 let nome = window.document.getElementById('nome')
 let email = document.querySelector('#email') //dentro de input chame o email
 let assunto = document.querySelector('#assunto')
+let nomeOk = false 
+let emailOk = false 
+let assuntoOk = false
 
 nome.style.width = '100%' //Obs.: não vai funcionar pois ja estilizei pelo css
 email.style.width = '100%' //Obs.: não vai funcionar pois ja estilizei pelo css
@@ -85,3 +88,12 @@ function validaAssunto(){
     }
 
 }
+
+function enviar() {
+    if (nomeOk == true && emailOk == true && assuntoOk == true) {
+       alert ('Formulário enviado com sucesso!')
+    }
+     else if (nomeOk != true && emailOk != true && assuntoOk != true) {
+       alert ('Preencha o formulário corretamente antes de enviar...')
+    }
+ }
