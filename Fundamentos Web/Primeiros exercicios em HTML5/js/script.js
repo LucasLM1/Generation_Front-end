@@ -81,7 +81,7 @@ function validaAssunto(){
         txtAssunto.innerHTML = "Você só pode digitar até 100 caracteres, caso contrario o assunto não será enviado" 
         txt.style.color = "white" //cor da fonte
         txt.style.fontSize = "18px" // tamanho da fonte
-        txt.style.margin = "7x"
+        txt.style.margin = "7px"
     }
 
 }
