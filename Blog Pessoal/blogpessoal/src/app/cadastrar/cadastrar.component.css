@@ -1,0 +1,142 @@
+#img-bg{
+    background-image: url("https://media0.giphy.com/media/ITRemFlr5tS39AzQUL/giphy.gif?cid=ecf05e4743amp3m1c3qrlmk4a1rt1160c9dqq2zwaftsppde&rid=giphy.gif&ct=g");
+    background-repeat: no-repeatkground-seamless-looping-concept-an;
+    background-size: cover;
+    display: grid;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    position: absolute; /*ocupa o proprio espaço dela mesma*/
+    background-image: linear-gradient(#2a45be4f,#a0a0a0b7); /*OBS.: Degrade inverso funciona*/
+    top: 50%; /*distancia do topo*/
+    left: 50%; /*distancia do lado esuqerdo*/
+    transform: translate(-50%,-50%); /* para deixar 100% alinhado*/
+    border-radius: 12px;
+    padding: 30px; /*espaço dos elementos para a a borda*/
+    width: 380px; /*largura*/
+    height: 550px; /*altura*/
+}
+
+.box:hover{
+    background-color: #4941c0de;
+    transition: .55s ease-in-out;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff46;
+    font-family: Arial, Helvetica, sans-serif; /*sempre por mais de uma*/
+    font-size: 20px;
+    transition: .20s ease-in-out;
+}
+
+.btnLogin{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+label{
+    position: absolute;
+    top : -15%; 
+    left: 2%;
+    font-family : Arial , Helvetica , sans-serif; 
+    color: #ffffff;
+    transform: translateY(10px);
+    transition: .20s ease-in-out;
+}
+
+.lblSelect{
+    color: transparent;
+}
+
+
+.lblSelect:focus + .slct{
+    color: transparent;
+}
+
+#tUser{
+    color: #fff;
+    background-color: transparent;
+    border:none;
+    outline: none;
+    margin-top: 5px; /*não mexer! alinhado com a label*/
+    margin-left: 125px; /*não mexer! alinhado com a label*/
+}
+.opt{
+    color: #000;
+}
+
+.slct{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ffffff;
+}
+
+input:focus{
+    border-bottom: 2px solid #17b617;
+    box-shadow: 0 2px 0 0 #17b617;
+}
+
+input:focus + label{
+    transform: translateY(-11px) scale(.9);
+    color: rgb(255, 255, 255);
+}
+
+input:not(:placeholder-shown) + label{
+    transform: translateY(-11px) scale(.9);
+    color: rgb(255, 255, 255);
+}
+
+input:not(:placeholder-shown){
+    border-bottom: 2px solid #17b617;
+    box-shadow: 0 2px 0 0 #17b617;
+}
+
+input::placeholder{
+    color: transparent;
+}
+
+button{
+    padding: 12px 18px;
+    margin-top: 15px; 
+    margin-right: 15px;
+    font-family: Arial, Helvetica, sans-serif; /*sempre por mais de uma*/
+    border: none;
+    border-radius: 11px;
+    align-items: center;
+    background-color: #ffffff1c;
+    color: #fff; /*cor da palavra entrar*/
+    box-shadow: 3px 2px 2px #1201ff9c, 3px 2px 2px #0143ff00;
+}
+
+button:focus{
+    background-color: #00fc1594;
+    transition: .35s;
+}
+
+.btnCancel:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 6px 5px 5px #0258f8e5, 5px 5px 5px #0143ff00;
+    background-color: #fc2600d8;
+    transition: .55s;
+}
+
+.btnCad:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 6px 5px 5px #0258f8e5, 5px 5px 5px #0143ff00;
+    background-color: #00fc1594;
+    transition: .55s;
+}
+
+.cad{
+    text-decoration: none;
+    color: #fff;
+}
