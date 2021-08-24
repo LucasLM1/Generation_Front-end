@@ -1,0 +1,33 @@
+footer{
+    background-image: linear-gradient(#63c4e2, #4444ca);/*inverter no menu*/
+}
+
+ul.redes{
+    list-style: none; /*para tirar os botões do lado*/
+    padding: 0;
+}
+
+ul.redes li{
+    display:inline; /*para eles ficarem um do lado do outro*/
+    margin: 0;
+    padding: 5px;
+}
+
+.fa{
+    font-size: 25pt;
+    color: #fff;
+    padding: 10px;
+}
+
+.fa-linkedin-square:hover{
+    color: #000;
+}
+
+.fa-github-square:hover{
+    color: #000;
+}
+
+.fa-instagram:hover{
+    color: #000;
+}
+
