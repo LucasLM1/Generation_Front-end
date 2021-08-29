@@ -110,7 +110,8 @@ button:focus{
     outline: none;
 }
 
-#tUser{
+.tUser{
+    width: 175px;
     color: #fff;
     background-color: transparent;
     border:none;
@@ -118,7 +119,9 @@ button:focus{
     margin-top: 0; /*não mexer! alinhado com a label*/
     margin-left: 125px; /*não mexer! alinhado com a label*/
 }
+
 .opt{
+    background-color: rgba(82, 114, 202, 0.589);
     color: #000;
 }
 
