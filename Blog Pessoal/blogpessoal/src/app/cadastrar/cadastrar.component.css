@@ -15,7 +15,7 @@
     transform: translate(-50%,-50%); /* para deixar 100% alinhado*/
     border-radius: 12px;
     padding: 30px; /*espaço dos elementos para a a borda*/
-    width: 380px; /*largura*/
+    width: 600px; /*largura*/
     height: 550px; /*altura*/
 }
 
@@ -91,14 +91,14 @@ input::placeholder{
 }
 
 button{
-    padding: 12px 18px;
+    padding: 15px 35px;
     margin-top: 55px; 
     margin-right: 25px;
     font-family: Arial, Helvetica, sans-serif; /*sempre por mais de uma*/
     border: none;
     border-radius: 11px;
     align-items: center;
-    background-color: #ffffff1c;
+    background-color: #4713134d;
     color: #fff; /*cor da palavra entrar*/
     box-shadow: 3px 2px 2px #1201ff9c, 3px 2px 2px #0143ff00;
 }

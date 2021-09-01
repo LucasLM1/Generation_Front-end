@@ -10,3 +10,21 @@ h1{
 h5{
     font-size: 18pt;
 }
+.inputDescricao{
+    border-radius: 9px;
+    outline: none;
+    height: 45px;
+
+}
+
+.btnCad{
+    background-image: linear-gradient(180deg, rgb(138, 137, 138), rgb(0, 217, 255));
+    border: none;
+    width: 120px;
+    border-radius: 9px;
+    outline: none;
+}
+.btnCad:hover{
+    background-image: linear-gradient(90deg, rgb(214, 252, 4), rgb(255, 187, 0));
+    transition: .55s ease-in-out;
+}
