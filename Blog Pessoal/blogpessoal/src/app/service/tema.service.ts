@@ -9,21 +9,29 @@ import { Tema } from '../model/Tema';
 })
 export class TemaService {
 
-  constructor(
-    private http:HttpClient
-  ) { }
+  constructor(private http:HttpClient) { }
 
   token = {
     headers: new HttpHeaders().set('Authorization', environment.token)
   }
 
   getAllTema(): Observable<Tema[]>{
-    return this.http.get<Tema[]>('https://lm1blog.herokuapp.com/tema', this.token)
+    return this.http.get<Tema[]>('https://lmblogoretorno.herokuapp.com/tema', this.token)
+  }
+
+  getByIdTema(id: number): Observable<Tema>{
+    return this.http.get<Tema>(`http://lmblogoretorno.herokuapp.com/tema/${id}`, this.token)
   }
 
   postTema(tema: Tema): Observable<Tema>{
-    return this.http.post<Tema>('https://lm1blog.herokuapp.com/tema', tema, this.token)
+    return this.http.post<Tema>('https://lmblogoretorno.herokuapp.com/tema', tema, this.token)
+  }
+putTema(tema: Tema): Observable<Tema>{
+    return this.http.put<Tema>('https://lmblogoretorno.herokuapp.com/tema', tema, this.token)
   }
 
+  deleteTema(id: number) {
+    return this.http.delete(`http://lmblogoretorno.herokuapp.com/tema/${id}`, this.token)
+  }
   
 }
