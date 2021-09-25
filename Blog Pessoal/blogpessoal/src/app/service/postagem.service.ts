@@ -23,6 +23,10 @@ export class PostagemService {
     return this.http.get<Postagem>(`https://blogjanainarodrigues.herokuapp.com/postagem/${id}`, this.token)
   }
 
+  getByTituloPostagem(titulo: string): Observable<Postagem[]>{
+    return this.http.get<Postagem[]>(`https://blogjanainarodrigues.herokuapp.com/postagens/titulo/${titulo}`, this.token)
+  }
+
   postPostagem(postagem: Postagem) : Observable<Postagem>{
     return this.http.post<Postagem>('https://blogjanainarodrigues.herokuapp.com/postagem', postagem, this.token)
   }
